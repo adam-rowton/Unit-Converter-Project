@@ -13,6 +13,10 @@ input {
     font-weight: 700;
 }
 
+input:focus-visible {
+    outline: none;
+}
+
 #header {
     background: #B295FF;
     color: #FFF;
@@ -67,4 +71,10 @@ button:active {
     box-sizing: border-box;
     text-align: center;
     max-width: 800px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

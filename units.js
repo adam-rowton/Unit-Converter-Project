@@ -3,7 +3,6 @@
 // 1 kilogram = 2.204 pound
 
 const btn = document.getElementById("btn")
-
 const input = document.getElementById("input")
 
 
@@ -24,11 +23,11 @@ function setValue() {
     const meters = (userValue / 3.281).toFixed(2)
     const feet = (userValue * 3.281).toFixed(2)
 
-    const liters = (userValue * 0.264).toFixed(2)
-    const gallons = (userValue / 0.264).toFixed(2)
+    const liters = (userValue / 0.264).toFixed(2)
+    const gallons = (userValue * 0.264).toFixed(2)
 
-    const kilos = (userValue * 2.204).toFixed(2)
-    const pounds = (userValue / 2.204).toFixed(2)
+    const kilos = (userValue / 2.204).toFixed(2)
+    const pounds = (userValue * 2.204).toFixed(2)
 
 
     // DOM manipulation
