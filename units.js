@@ -11,11 +11,14 @@ const length = document.getElementById("length")
 const mass = document.getElementById("mass")
 
 
+input.addEventListener("keyup", function() {
+    setValue()
+})
 
-
+window.onload = setValue()
 
 function setValue() {
-    const userValue = input.value
+    let userValue = input.value
     console.log(userValue)
 
     // formula equations
