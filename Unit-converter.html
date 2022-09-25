@@ -13,14 +13,14 @@
 
 
 <body>
-    <script src="units.js"></script>
+
     <div id="header">
         <h1>Unit Conversions</h1>
         <div>
-            <input id="input"></input>
+            <input id="input">
         </div>
-        <div>
-            <button id="btn">Convert</button>
+        <div id="btn-div">
+            <button id="btn" onclick="setValue()">Convert</button>
         </div>
     </div>
 
@@ -28,20 +28,21 @@
 
         <div class="output-section">
             <h4>Length (Meters/Feet)</h4>
-            <p>|</p>
+            <p id="length">|</p>
         </div>
 
         <div class="output-section">
             <h4>Volume (Liters/Gallons)</h4>
-            <p>|</p>
+            <p id="volume">|</p>
         </div>
 
         <div class="output-section">
             <h4>Mass (Kilograms/Pounds)</h4>
-            <p>|</p>
+            <p id="mass">|</p>
         </div>
 
     </div>
+    <script src="units.js"></script>
 </body>
 
 
