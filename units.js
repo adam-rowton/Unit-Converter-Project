@@ -35,12 +35,25 @@ function setValue() {
 
     if (userValue === "") {
         userValue = 0
+        length.innerHTML = `${userValue} meters = ${feet} feet | ${userValue} feet = ${meters} meters`
+        volume.innerHTML = `${userValue} liters = ${gallons} gallons | ${userValue} gallons = ${liters} liters`
+        mass.innerHTML = `${userValue} kilograms = ${pounds} pounds | ${userValue} pounds = ${kilos} kilograms`
+
+    } else if (userValue == 1) {
+        length.innerHTML = `${userValue} meter = ${feet} feet | ${userValue} foot = ${meters} meters`
+        volume.innerHTML = `${userValue} liter = ${gallons} gallons | ${userValue} gallon = ${liters} liters`
+        mass.innerHTML = `${userValue} kilogram = ${pounds} pounds | ${userValue} pound = ${kilos} kilograms`
+
+    } else {
+
+
+
+
+        // DOM manipulations
+
+        length.innerHTML = `${userValue} meters = ${feet} feet | ${userValue} feet = ${meters} meters`
+        volume.innerHTML = `${userValue} liters = ${gallons} gallons | ${userValue} gallons = ${liters} liters`
+        mass.innerHTML = `${userValue} kilograms = ${pounds} pounds | ${userValue} pounds = ${kilos} kilograms`
+
     }
-
-    // DOM manipulations
-
-    length.innerHTML = `${userValue} meters = ${feet} feet | ${userValue} feet = ${meters} meters`
-    volume.innerHTML = `${userValue} liters = ${gallons} gallons | ${userValue} gallons = ${liters} liters`
-    mass.innerHTML = `${userValue} kilograms = ${pounds} pounds | ${userValue} pounds = ${kilos} kilograms`
-
 }
