@@ -33,9 +33,14 @@ function setValue() {
     const pounds = (userValue * 2.204).toFixed(2)
 
 
-    // DOM manipulation
+    if (userValue === "") {
+        userValue = 0
+    }
+
+    // DOM manipulations
 
     length.innerHTML = `${userValue} meters = ${feet} feet | ${userValue} feet = ${meters} meters`
     volume.innerHTML = `${userValue} liters = ${gallons} gallons | ${userValue} gallons = ${liters} liters`
     mass.innerHTML = `${userValue} kilograms = ${pounds} pounds | ${userValue} pounds = ${kilos} kilograms`
+
 }
